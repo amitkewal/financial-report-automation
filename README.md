@@ -100,7 +100,28 @@ This creates one client with two contrasting funds — **Alpha PE Fund I**
 carries each through upload → validate → draft → review → approve →
 publish, producing `sample_data/output/{ALPHA1,BETA2}_FINAL.{docx,pdf}`.
 
-### 6. Run tests
+### 6. (Optional) Run the real-data-grounded fixture
+
+A third fund fixture, **Investcorp Credit Management BDC, Inc.**, is
+grounded in a real, publicly traded BDC's actual reported FY2025 figures
+(sourced via web search — see
+[`scripts/generate_real_fund_data.py`](scripts/generate_real_fund_data.py)
+for exactly which numbers are real vs. estimated, and why). It also uses a
+genuinely different mapping shape than the two synthetic funds — a single
+net-asset column instead of GP/LP, and current/prior-year instead of
+Unadjusted/Adjustments/Adjusted — so it doubles as a test of the mapping
+engine's flexibility, not just its numbers.
+
+```bash
+python scripts/generate_real_fund_data.py
+python scripts/run_real_fund_e2e.py
+```
+
+Produces `sample_data/output/ICMB_FINAL.{docx,pdf}`. **This is a test
+fixture, not an official ICMB filing** — see the provenance note repeated
+throughout the generated workbook and template.
+
+### 7. Run tests
 
 ```bash
 cd backend
@@ -235,7 +256,8 @@ backend/app/
   storage.py       local-filesystem storage backend (Client > Fund > Period layout)
 frontend/          Streamlit UI (one file per workflow screen, under pages/)
 sample_data/       generated sample workbooks, templates, and mapping configs
-scripts/           generate_sample_data.py, run_sample_e2e.py
+scripts/           generate_sample_data.py, run_sample_e2e.py (2 synthetic funds)
+                   generate_real_fund_data.py, run_real_fund_e2e.py (1 real-data-grounded fund)
 backend/tests/     pytest suite for the excel/report engines
 ```
 
