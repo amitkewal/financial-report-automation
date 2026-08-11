@@ -1,0 +1,364 @@
+{
+  "statements": {
+    "balance_sheet": {
+      "present": true,
+      "sheet_name": "BS Lead",
+      "type": "line_items",
+      "columns": {
+        "unadjusted": "C",
+        "adjustments": "D",
+        "adjusted": "E",
+        "prior_year": "F"
+      },
+      "line_items": [
+        {
+          "key": "investments_at_fair_value",
+          "label": "Loans and debt investments, at fair value",
+          "row": 6
+        },
+        {
+          "key": "cash_and_equivalents",
+          "label": "Cash and cash equivalents",
+          "row": 7
+        },
+        {
+          "key": "interest_receivable",
+          "label": "Interest receivable",
+          "row": 8
+        },
+        {
+          "key": "other_assets",
+          "label": "Other assets",
+          "row": 9
+        },
+        {
+          "key": "total_assets",
+          "label": "Total assets",
+          "row": 10,
+          "is_total": true
+        },
+        {
+          "key": "accrued_expenses",
+          "label": "Accrued expenses",
+          "row": 13
+        },
+        {
+          "key": "credit_facility_payable",
+          "label": "Credit facility payable",
+          "row": 14
+        },
+        {
+          "key": "total_liabilities",
+          "label": "Total liabilities",
+          "row": 15,
+          "is_total": true
+        },
+        {
+          "key": "gp_capital",
+          "label": "General Partner",
+          "row": 18
+        },
+        {
+          "key": "lp_capital",
+          "label": "Limited Partners",
+          "row": 19
+        },
+        {
+          "key": "total_partners_capital",
+          "label": "Total partners' capital",
+          "row": 20,
+          "is_total": true
+        },
+        {
+          "key": "total_liabilities_and_capital",
+          "label": "Total liabilities and partners' capital",
+          "row": 22,
+          "is_total": true
+        }
+      ]
+    },
+    "income_statement": {
+      "present": true,
+      "sheet_name": "IS Lead",
+      "type": "line_items",
+      "columns": {
+        "unadjusted": "C",
+        "adjustments": "D",
+        "adjusted": "E",
+        "prior_year": "F"
+      },
+      "line_items": [
+        {
+          "key": "interest_income",
+          "label": "Interest income",
+          "row": 6
+        },
+        {
+          "key": "fee_income",
+          "label": "Fee income",
+          "row": 7
+        },
+        {
+          "key": "total_investment_income",
+          "label": "Total investment income",
+          "row": 8,
+          "is_total": true
+        },
+        {
+          "key": "management_fees",
+          "label": "Management fees",
+          "row": 11
+        },
+        {
+          "key": "interest_expense",
+          "label": "Interest expense (credit facility)",
+          "row": 12
+        },
+        {
+          "key": "total_expenses",
+          "label": "Total expenses",
+          "row": 13,
+          "is_total": true
+        },
+        {
+          "key": "net_investment_income",
+          "label": "Net investment income",
+          "row": 15,
+          "is_total": true
+        },
+        {
+          "key": "net_realized_gain",
+          "label": "Net realized gain on investments",
+          "row": 17
+        },
+        {
+          "key": "net_unrealized_gain",
+          "label": "Net change in unrealized gain (loss) on investments",
+          "row": 18
+        },
+        {
+          "key": "net_realized_and_unrealized",
+          "label": "Net realized and unrealized gain (loss)",
+          "row": 19,
+          "is_total": true
+        },
+        {
+          "key": "net_increase_from_operations",
+          "label": "Net increase in partners' capital resulting from operations",
+          "row": 21,
+          "is_total": true
+        }
+      ]
+    },
+    "schedule_of_investments": {
+      "present": false
+    },
+    "statement_of_changes_in_partners_capital": {
+      "present": true,
+      "sheet_name": "SCPC Lead",
+      "type": "line_items",
+      "columns": {
+        "gp": "C",
+        "lp": "D",
+        "total": "E"
+      },
+      "line_items": [
+        {
+          "key": "beginning_capital",
+          "label": "Partners' capital, beginning of period",
+          "row": 5
+        },
+        {
+          "key": "contributions",
+          "label": "Contributions",
+          "row": 6
+        },
+        {
+          "key": "net_increase_from_operations",
+          "label": "Net increase in partners' capital resulting from operations",
+          "row": 7
+        },
+        {
+          "key": "distributions",
+          "label": "Distributions",
+          "row": 8
+        },
+        {
+          "key": "ending_capital",
+          "label": "Partners' capital, end of period",
+          "row": 9,
+          "is_total": true
+        }
+      ]
+    },
+    "statement_of_cash_flows": {
+      "present": true,
+      "sheet_name": "SOCF Lead",
+      "type": "line_items",
+      "columns": {
+        "amount": "C",
+        "prior_year": "D"
+      },
+      "line_items": [
+        {
+          "key": "net_increase_from_operations",
+          "label": "Net increase in partners' capital resulting from operations",
+          "row": 6
+        },
+        {
+          "key": "net_unrealized_loss_adj",
+          "label": "Net unrealized loss on investments",
+          "row": 7
+        },
+        {
+          "key": "net_realized_gain_adj",
+          "label": "Net realized gain on investments",
+          "row": 8
+        },
+        {
+          "key": "fundings_of_loans",
+          "label": "Fundings of loans",
+          "row": 9
+        },
+        {
+          "key": "repayments_of_loans",
+          "label": "Repayments of loans received",
+          "row": 10
+        },
+        {
+          "key": "changes_interest_receivable",
+          "label": "Changes in interest receivable",
+          "row": 11
+        },
+        {
+          "key": "changes_accrued_expenses",
+          "label": "Changes in accrued expenses",
+          "row": 12
+        },
+        {
+          "key": "net_cash_operating",
+          "label": "Net cash provided by operating activities",
+          "row": 13,
+          "is_total": true
+        },
+        {
+          "key": "capital_contributions_received",
+          "label": "Capital contributions received",
+          "row": 15
+        },
+        {
+          "key": "draws_on_credit_facility",
+          "label": "Draws on credit facility",
+          "row": 16
+        },
+        {
+          "key": "repayments_of_credit_facility",
+          "label": "Repayments of credit facility",
+          "row": 17
+        },
+        {
+          "key": "net_cash_financing",
+          "label": "Net cash provided by financing activities",
+          "row": 18,
+          "is_total": true
+        },
+        {
+          "key": "net_change_in_cash",
+          "label": "Net increase in cash",
+          "row": 19,
+          "is_total": true
+        },
+        {
+          "key": "cash_beginning_of_period",
+          "label": "Cash, beginning of period",
+          "row": 20
+        },
+        {
+          "key": "cash_end_of_period",
+          "label": "Cash, end of period",
+          "row": 21,
+          "is_total": true
+        }
+      ]
+    },
+    "notes": {
+      "present": true,
+      "sheet_name": "Notes",
+      "type": "notes",
+      "notes_items": [
+        {
+          "key": "credit_facility_outstanding",
+          "label": "Credit facility outstanding balance",
+          "row": 5,
+          "column": "C",
+          "value_type": "number"
+        },
+        {
+          "key": "credit_facility_rate",
+          "label": "Interest rate on credit facility",
+          "row": 6,
+          "column": "C",
+          "value_type": "text"
+        },
+        {
+          "key": "fair_value_measurement_level",
+          "label": "Fair value measurement level",
+          "row": 8,
+          "column": "C",
+          "value_type": "text"
+        }
+      ]
+    }
+  },
+  "cross_checks": [
+    {
+      "name": "Balance Sheet self-balances (Assets = Liabilities + Partners' Capital)",
+      "left": "balance_sheet.total_assets.adjusted",
+      "right": "balance_sheet.total_liabilities_and_capital.adjusted",
+      "tolerance": 0.01,
+      "applies_if_present": [
+        "balance_sheet"
+      ]
+    },
+    {
+      "name": "Net income ties from Income Statement to Statement of Changes in Partners' Capital",
+      "left": "income_statement.net_increase_from_operations.adjusted",
+      "right": "statement_of_changes_in_partners_capital.net_increase_from_operations.total",
+      "tolerance": 0.01,
+      "applies_if_present": [
+        "income_statement",
+        "statement_of_changes_in_partners_capital"
+      ]
+    },
+    {
+      "name": "Ending Partners' Capital ties from SCPC to Balance Sheet",
+      "left": "balance_sheet.total_partners_capital.adjusted",
+      "right": "statement_of_changes_in_partners_capital.ending_capital.total",
+      "tolerance": 0.01,
+      "applies_if_present": [
+        "balance_sheet",
+        "statement_of_changes_in_partners_capital"
+      ]
+    },
+    {
+      "name": "Ending cash ties from Statement of Cash Flows to Balance Sheet",
+      "left": "balance_sheet.cash_and_equivalents.adjusted",
+      "right": "statement_of_cash_flows.cash_end_of_period.amount",
+      "tolerance": 0.01,
+      "applies_if_present": [
+        "balance_sheet",
+        "statement_of_cash_flows"
+      ]
+    },
+    {
+      "name": "Credit facility balance ties from Notes to Balance Sheet",
+      "left": "balance_sheet.credit_facility_payable.adjusted",
+      "right": "notes.credit_facility_outstanding",
+      "tolerance": 0.01,
+      "applies_if_present": [
+        "balance_sheet",
+        "notes"
+      ]
+    }
+  ]
+}
