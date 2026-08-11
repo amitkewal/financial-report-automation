@@ -205,3 +205,9 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Project runtime data (uploaded workbooks, generated drafts/finals, sqlite db)
+storage/app.db
+storage/clients/
+sample_data/output/
+
