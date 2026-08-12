@@ -211,3 +211,6 @@ storage/app.db
 storage/clients/
 sample_data/output/
 
+# macOS
+.DS_Store
+
